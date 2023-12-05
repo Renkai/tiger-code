@@ -7,7 +7,7 @@ version: "2.0"
 sort: by_weight
 import_tables:
   - tigress
-  - tigress_ci
+  - filtered_ci
   #- tigress_simp_ci  # 删掉前面的#号，即可启用简词
   
 columns:
