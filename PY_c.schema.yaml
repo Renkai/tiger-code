@@ -153,9 +153,9 @@ translator:
   db_class: tabledb  #用户词典格式，tabledb（文本） 或 userdb （二进制）
   comment_format:  #提示码自定义
     - "xform/~/ /" #去掉编码提示前的~号
-  # disable_user_dict_for_patterns:
+  disable_user_dict_for_patterns:
   # #  - "^z.*$"  #这是原始默认设置
-  #   - "^[a-y]{1,2}$"  #2码及以下不使用自动调频、不自动造词
+     - "^[a-y]{1,3}$"  #2码及以下不使用自动调频、不自动造词
   preedit_format: # 上屏码自定义
     - xform/([nl])v/$1ü/ # 拼音状态下输入nv实际显示nü
     - xform/([nl])ue/$1üe/ # n或者l后面紧跟着输入ue显示üe
